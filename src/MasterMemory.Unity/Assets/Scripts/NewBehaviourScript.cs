@@ -43,21 +43,6 @@ public class NewBehaviourScript : MonoBehaviour
     [ContextMenu("TestLoad")]
     void TestLoad()
     {   
-        //var builder = new DatabaseBuilder();
-        //builder.Append(new PersonModel[]
-        //{
-        //    new PersonModel { RandomId = "1",FirstName = "Dana Terry" },
-        //    new PersonModel { RandomId = "2",FirstName = "Kirk Obrien" },
-        //    new PersonModel { RandomId = "4",   FirstName = "Wm Banks" },
-        //    new PersonModel { RandomId = "3",  FirstName = "Karl Benson" },
-        //    new PersonModel { RandomId = "23",  FirstName = "Jared Holland" },
-        //    new PersonModel { RandomId = "5",  FirstName = "Jeanne Phelps" },
-        //    new PersonModel { RandomId = "6", FirstName = "Willie Rose" },
-        //    new PersonModel { RandomId = "9",  FirstName = "Shari Gutierrez" },
-        //    new PersonModel { RandomId = "0",  FirstName = "Lori Wilson" },
-        //    new PersonModel { RandomId = "8", FirstName = "Lena Ramsey" },
-        //});
-
         //// build database binary(you can also use `WriteToStream` for save to file).
         //byte[] data = builder.Build();
         byte[] data = testBinText?.bytes;
@@ -132,7 +117,7 @@ public class NewBehaviourScript : MonoBehaviour
         var db = new MemoryDatabase(data);
 
         // .PersonTable.FindByPersonId is fully typed by code-generation.
-        var person = db.StaticLanguage_zh_cnTable.FindClosestById(1000000067);
+        var person = db.StaticLanguage_zh_cnTable.FindById(1000000067);
 
         if (person != null)
             Debug.Log(person.Text);
