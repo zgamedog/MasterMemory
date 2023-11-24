@@ -108,8 +108,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\ILayerable.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\TimelineClip.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\Animation\AnimationOutputWeightProcessor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\Events\Marker.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\Audio\AudioMixerProperties.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\Events\Marker.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\AssetUpgrade\AnimationTrackUpgrade.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\DiscreteTime.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\Playables\TimeNotificationBehaviour.cs" />
@@ -371,17 +371,11 @@
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
     <Reference Include="System.Threading.Tasks.Extensions">
       <HintPath>Assets\Plugins\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>Assets\Plugins\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
@@ -389,8 +383,14 @@
     <Reference Include="System.Buffers">
       <HintPath>Assets\Plugins\System.Buffers.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="System.Memory">
       <HintPath>Assets\Plugins\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da092282b28c4a046bbc59f04fb7f6bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testBinText: {fileID: 4900000, guid: ce8661524e32e384d9cfb1553cf71949, type: 3}
+  testBinText: {fileID: 4900000, guid: 3960df6672c5bd8458b8b978ad2dc085, type: 3}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0

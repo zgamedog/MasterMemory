@@ -42,9 +42,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -65,9 +67,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -88,9 +92,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -110,9 +116,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -133,9 +141,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -156,9 +166,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -178,9 +190,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -201,9 +215,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -224,9 +240,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -246,9 +264,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -269,9 +289,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -292,9 +314,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -314,9 +338,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -337,9 +363,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -360,9 +388,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -382,9 +412,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -405,9 +437,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -428,9 +462,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -450,9 +486,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -473,9 +511,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -496,9 +536,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -518,9 +560,11 @@ namespace TestTable
                 table,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -541,9 +585,11 @@ namespace TestTable
                 table,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -564,9 +610,11 @@ namespace TestTable
                 table,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -586,9 +634,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 table,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -609,9 +659,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 table,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -632,9 +684,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 table,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -654,9 +708,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 table,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -677,9 +733,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 table,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -700,9 +758,85 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 table,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
+            
+            );
+        }
+
+        public void ReplaceAll(System.Collections.Generic.IList<StaticLanguage_zh_cn> data)
+        {
+            var newData = CloneAndSortBy(data, x => x.Id, System.Collections.Generic.Comparer<long>.Default);
+            var table = new StaticLanguage_zh_cnTable(newData);
+            memory = new MemoryDatabase(
+                memory.FailTable,
+                memory.ItemMasterTable,
+                memory.ItemMasterEmptyValidateTable,
+                memory.PersonModelTable,
+                memory.QuestMasterTable,
+                memory.QuestMasterEmptyValidateTable,
+                memory.SampleTable,
+                memory.SequentialCheckMasterTable,
+                memory.SingleMasterTable,
+                memory.SkillMasterTable,
+                table,
+                memory.TestMasterTable,
+                memory.UnityModelTable,
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
+            
+            );
+        }
+
+        public void RemoveStaticLanguage_zh_cn(long[] keys)
+        {
+            var data = RemoveCore(memory.StaticLanguage_zh_cnTable.GetRawDataUnsafe(), keys, x => x.Id, System.Collections.Generic.Comparer<long>.Default);
+            var newData = CloneAndSortBy(data, x => x.Id, System.Collections.Generic.Comparer<long>.Default);
+            var table = new StaticLanguage_zh_cnTable(newData);
+            memory = new MemoryDatabase(
+                memory.FailTable,
+                memory.ItemMasterTable,
+                memory.ItemMasterEmptyValidateTable,
+                memory.PersonModelTable,
+                memory.QuestMasterTable,
+                memory.QuestMasterEmptyValidateTable,
+                memory.SampleTable,
+                memory.SequentialCheckMasterTable,
+                memory.SingleMasterTable,
+                memory.SkillMasterTable,
+                table,
+                memory.TestMasterTable,
+                memory.UnityModelTable,
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
+            
+            );
+        }
+
+        public void Diff(StaticLanguage_zh_cn[] addOrReplaceData)
+        {
+            var data = DiffCore(memory.StaticLanguage_zh_cnTable.GetRawDataUnsafe(), addOrReplaceData, x => x.Id, System.Collections.Generic.Comparer<long>.Default);
+            var newData = CloneAndSortBy(data, x => x.Id, System.Collections.Generic.Comparer<long>.Default);
+            var table = new StaticLanguage_zh_cnTable(newData);
+            memory = new MemoryDatabase(
+                memory.FailTable,
+                memory.ItemMasterTable,
+                memory.ItemMasterEmptyValidateTable,
+                memory.PersonModelTable,
+                memory.QuestMasterTable,
+                memory.QuestMasterEmptyValidateTable,
+                memory.SampleTable,
+                memory.SequentialCheckMasterTable,
+                memory.SingleMasterTable,
+                memory.SkillMasterTable,
+                table,
+                memory.TestMasterTable,
+                memory.UnityModelTable,
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -722,9 +856,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 table,
                 memory.UnityModelTable,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -745,9 +881,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 table,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -768,9 +906,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 table,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -791,9 +931,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 table,
-                memory.UserLevelTable
+                memory.UserLevelTable,
+                memory.World_map_spawnTable
             
             );
         }
@@ -813,9 +955,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                table
+                table,
+                memory.World_map_spawnTable
             
             );
         }
@@ -836,9 +980,11 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
-                table
+                table,
+                memory.World_map_spawnTable
             
             );
         }
@@ -859,8 +1005,84 @@ namespace TestTable
                 memory.SequentialCheckMasterTable,
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
                 memory.TestMasterTable,
                 memory.UnityModelTable,
+                table,
+                memory.World_map_spawnTable
+            
+            );
+        }
+
+        public void ReplaceAll(System.Collections.Generic.IList<World_map_spawn> data)
+        {
+            var newData = CloneAndSortBy(data, x => x.Id, System.Collections.Generic.Comparer<long>.Default);
+            var table = new World_map_spawnTable(newData);
+            memory = new MemoryDatabase(
+                memory.FailTable,
+                memory.ItemMasterTable,
+                memory.ItemMasterEmptyValidateTable,
+                memory.PersonModelTable,
+                memory.QuestMasterTable,
+                memory.QuestMasterEmptyValidateTable,
+                memory.SampleTable,
+                memory.SequentialCheckMasterTable,
+                memory.SingleMasterTable,
+                memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
+                memory.TestMasterTable,
+                memory.UnityModelTable,
+                memory.UserLevelTable,
+                table
+            
+            );
+        }
+
+        public void RemoveWorld_map_spawn(long[] keys)
+        {
+            var data = RemoveCore(memory.World_map_spawnTable.GetRawDataUnsafe(), keys, x => x.Id, System.Collections.Generic.Comparer<long>.Default);
+            var newData = CloneAndSortBy(data, x => x.Id, System.Collections.Generic.Comparer<long>.Default);
+            var table = new World_map_spawnTable(newData);
+            memory = new MemoryDatabase(
+                memory.FailTable,
+                memory.ItemMasterTable,
+                memory.ItemMasterEmptyValidateTable,
+                memory.PersonModelTable,
+                memory.QuestMasterTable,
+                memory.QuestMasterEmptyValidateTable,
+                memory.SampleTable,
+                memory.SequentialCheckMasterTable,
+                memory.SingleMasterTable,
+                memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
+                memory.TestMasterTable,
+                memory.UnityModelTable,
+                memory.UserLevelTable,
+                table
+            
+            );
+        }
+
+        public void Diff(World_map_spawn[] addOrReplaceData)
+        {
+            var data = DiffCore(memory.World_map_spawnTable.GetRawDataUnsafe(), addOrReplaceData, x => x.Id, System.Collections.Generic.Comparer<long>.Default);
+            var newData = CloneAndSortBy(data, x => x.Id, System.Collections.Generic.Comparer<long>.Default);
+            var table = new World_map_spawnTable(newData);
+            memory = new MemoryDatabase(
+                memory.FailTable,
+                memory.ItemMasterTable,
+                memory.ItemMasterEmptyValidateTable,
+                memory.PersonModelTable,
+                memory.QuestMasterTable,
+                memory.QuestMasterEmptyValidateTable,
+                memory.SampleTable,
+                memory.SequentialCheckMasterTable,
+                memory.SingleMasterTable,
+                memory.SkillMasterTable,
+                memory.StaticLanguage_zh_cnTable,
+                memory.TestMasterTable,
+                memory.UnityModelTable,
+                memory.UserLevelTable,
                 table
             
             );

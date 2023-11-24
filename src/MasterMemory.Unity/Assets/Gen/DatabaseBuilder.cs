@@ -78,6 +78,12 @@ namespace TestTable
             return this;
         }
 
+        public DatabaseBuilder Append(System.Collections.Generic.IEnumerable<StaticLanguage_zh_cn> dataSource)
+        {
+            AppendCore(dataSource, x => x.Id, System.Collections.Generic.Comparer<long>.Default);
+            return this;
+        }
+
         public DatabaseBuilder Append(System.Collections.Generic.IEnumerable<TestMaster> dataSource)
         {
             AppendCore(dataSource, x => x.TestID, System.Collections.Generic.Comparer<int>.Default);
@@ -93,6 +99,12 @@ namespace TestTable
         public DatabaseBuilder Append(System.Collections.Generic.IEnumerable<UserLevel> dataSource)
         {
             AppendCore(dataSource, x => x.Level, System.Collections.Generic.Comparer<int>.Default);
+            return this;
+        }
+
+        public DatabaseBuilder Append(System.Collections.Generic.IEnumerable<World_map_spawn> dataSource)
+        {
+            AppendCore(dataSource, x => x.Id, System.Collections.Generic.Comparer<long>.Default);
             return this;
         }
 

@@ -36,8 +36,15 @@ namespace MasterMemoryHelper
                     var privateFields = table.DataType.GetFields(BindingFlags.NonPublic | BindingFlags.Instance);
 
                     foreach (var prop in table.Properties)
-                    {    
-                        if (values.TryGetValue(prop.NameSnakeCase, out var rawValue) || values.TryGetValue(prop.Name, out rawValue))
+                    {
+                        string rawValue = string.Empty;
+                        var ret = values.TryGetValue(prop.NameSnakeCase, out rawValue);
+                        if (ret == false)
+                            ret= values.TryGetValue(prop.Name, out rawValue);
+                        if (ret == false)
+                            ret = values.TryGetValue(prop.NameLowerCamel, out rawValue);
+                        //UnityEngine.Debug.Log(prop + " " + rawValue);
+                        if (ret)
                         {   
                             var value = ParseValue(prop.PropertyInfo.PropertyType, rawValue);
 
@@ -68,7 +75,11 @@ namespace MasterMemoryHelper
 
         private static object ParseValue(Type type, string rawValue)
         {
-            if (type == typeof(string)) return rawValue;
+            if (type == typeof(string)) 
+            {   
+                return rawValue;
+            }
+        
 
             if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
             {
@@ -106,9 +117,9 @@ namespace MasterMemoryHelper
                 case TypeCode.UInt32:
                     return uint.Parse(rawValue, CultureInfo.InvariantCulture);
                 case TypeCode.Int64:
-                    return long.Parse(rawValue, CultureInfo.InvariantCulture);
+                    return long.Parse(rawValue, CultureInfo.DefaultThreadCurrentCulture);
                 case TypeCode.UInt64:
-                    return ulong.Parse(rawValue, CultureInfo.InvariantCulture);
+                    return ulong.Parse(rawValue,  NumberStyles.Any ,CultureInfo.InvariantCulture);
                 case TypeCode.Single:
                     return float.Parse(rawValue, CultureInfo.InvariantCulture);
                 case TypeCode.Double:

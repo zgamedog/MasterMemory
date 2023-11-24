@@ -57,30 +57,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TestStructures\TestMaster.cs" />
+    <Compile Include="Assets\Gen\Tables\StaticLanguage_zh_cnTable.cs" />
     <Compile Include="Assets\TestStructures\UserLevel.cs" />
+    <Compile Include="Assets\Gen\DatabaseBuilder.cs" />
+    <Compile Include="Assets\TestStructures\World_map_spawn.cs" />
+    <Compile Include="Assets\Gen\Tables\ItemMasterEmptyValidateTable.cs" />
+    <Compile Include="Assets\Gen\Tables\PersonModelTable.cs" />
+    <Compile Include="Assets\Gen\Tables\QuestMasterEmptyValidateTable.cs" />
+    <Compile Include="Assets\Gen\Tables\UserLevelTable.cs" />
+    <Compile Include="Assets\Gen\Tables\SequentialCheckMasterTable.cs" />
+    <Compile Include="Assets\Gen\Tables\World_map_spawnTable.cs" />
+    <Compile Include="Assets\Gen\Tables\TestMasterTable.cs" />
     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Gen\MemoryDatabase.cs" />
+    <Compile Include="Assets\Gen\Tables\FailTable.cs" />
+    <Compile Include="Assets\TestStructures\StaticLanguage_zh_cn.cs" />
+    <Compile Include="Assets\Gen\Tables\UnityModelTable.cs" />
     <Compile Include="Assets\TestStructures\Sample.cs" />
-    <Compile Include="Assets\TestStructures\QuestMaster.cs" />
-    <Compile Include="Assets\TestStructures\PersonModel.cs" />
-    <Compile Include="Assets\TestStructures\SkillMaster.cs" />
-    <Compile Include="Assets\Gen\Tables\SingleMasterTable.cs" />
+    <Compile Include="Assets\Gen\ImmutableBuilder.cs" />
+    <Compile Include="Assets\TestStructures\UnityModel.cs" />
     <Compile Include="Assets\Gen\Tables\SkillMasterTable.cs" />
     <Compile Include="Assets\Gen\Tables\ItemMasterTable.cs" />
-    <Compile Include="Assets\Gen\Tables\SequentialCheckMasterTable.cs" />
-    <Compile Include="Assets\Gen\MasterMemoryResolver.cs" />
-    <Compile Include="Assets\Gen\ImmutableBuilder.cs" />
     <Compile Include="Assets\Gen\Tables\QuestMasterTable.cs" />
-    <Compile Include="Assets\Gen\Tables\QuestMasterEmptyValidateTable.cs" />
+    <Compile Include="Assets\Gen\Tables\SingleMasterTable.cs" />
+    <Compile Include="Assets\Gen\MasterMemoryResolver.cs" />
+    <Compile Include="Assets\TestStructures\QuestMaster.cs" />
+    <Compile Include="Assets\TestStructures\PersonModel.cs" />
     <Compile Include="Assets\Gen\Tables\SampleTable.cs" />
-    <Compile Include="Assets\Gen\Tables\FailTable.cs" />
-    <Compile Include="Assets\Gen\DatabaseBuilder.cs" />
-    <Compile Include="Assets\Gen\Tables\TestMasterTable.cs" />
-    <Compile Include="Assets\Gen\Tables\UserLevelTable.cs" />
-    <Compile Include="Assets\Gen\Tables\PersonModelTable.cs" />
-    <Compile Include="Assets\Gen\Tables\ItemMasterEmptyValidateTable.cs" />
-    <Compile Include="Assets\Gen\MemoryDatabase.cs" />
-    <Compile Include="Assets\TestStructures\UnityModel.cs" />
-    <Compile Include="Assets\Gen\Tables\UnityModelTable.cs" />
+    <Compile Include="Assets\TestStructures\SkillMaster.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -688,6 +692,14 @@
       <Project>{ED22DCC0-462F-3DD6-651F-41108D7073A3}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="ClassTypeReference.csproj">
+      <Project>{C280206E-D643-A370-CD1B-56BB11B73339}</Project>
+      <Name>ClassTypeReference</Name>
+    </ProjectReference>
+    <ProjectReference Include="MessagePack.csproj">
+      <Project>{40F11225-D2E5-8E44-AFA4-8CA3A83A83D3}</Project>
+      <Name>MessagePack</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{7A613F6E-AD01-8E4D-7D5A-CF63B3D470E9}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
@@ -708,13 +720,21 @@
       <Project>{BB7DE992-A866-022C-8410-C016DAF8CD77}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
+    <ProjectReference Include="MasterMemory.csproj">
+      <Project>{F8DD6DB6-E460-15A3-92BB-32FCA2AC2B7D}</Project>
+      <Name>MasterMemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="MasterMemoryHelper.csproj">
+      <Project>{73256755-19B8-0B2B-5D48-EAA140593EF4}</Project>
+      <Name>MasterMemoryHelper</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{A3D62653-E634-0C9C-B260-A23C6ED9AEFB}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{1231DAB7-FEE5-A149-17AA-F3EA62720A60}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
+    <ProjectReference Include="MessagePack.Annotations.csproj">
+      <Project>{BAF86680-2B63-3BE6-902D-118FD118ECA9}</Project>
+      <Name>MessagePack.Annotations</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
       <Project>{2C241A55-8D72-3621-DF8F-44413E7FE4ED}</Project>
@@ -724,25 +744,9 @@
       <Project>{DF2FD93E-874F-ECF6-E4AB-A36C800B35CE}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
-    <ProjectReference Include="MessagePack.Annotations.csproj">
-      <Project>{BAF86680-2B63-3BE6-902D-118FD118ECA9}</Project>
-      <Name>MessagePack.Annotations</Name>
-    </ProjectReference>
-    <ProjectReference Include="MasterMemory.csproj">
-      <Project>{F8DD6DB6-E460-15A3-92BB-32FCA2AC2B7D}</Project>
-      <Name>MasterMemory</Name>
-    </ProjectReference>
-    <ProjectReference Include="MessagePack.csproj">
-      <Project>{40F11225-D2E5-8E44-AFA4-8CA3A83A83D3}</Project>
-      <Name>MessagePack</Name>
-    </ProjectReference>
-    <ProjectReference Include="ClassTypeReference.csproj">
-      <Project>{C280206E-D643-A370-CD1B-56BB11B73339}</Project>
-      <Name>ClassTypeReference</Name>
-    </ProjectReference>
-    <ProjectReference Include="MasterMemoryHelper.csproj">
-      <Project>{73256755-19B8-0B2B-5D48-EAA140593EF4}</Project>
-      <Name>MasterMemoryHelper</Name>
+    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
+      <Project>{1231DAB7-FEE5-A149-17AA-F3EA62720A60}</Project>
+      <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

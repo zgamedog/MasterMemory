@@ -56,30 +56,30 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\MasterMemory\RangeView.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\DatabaseBuilderBase.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\Validation\ValidatableSet.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\Validation\ITableUniqueValidate.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\Validation\ValidatableSet.Sequential.cs" />
     <Compile Include="Assets\Scripts\MasterMemory\MemoryDatabaseBase.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\IValidatable.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\Validation\ReferenceSet.cs" />
     <Compile Include="Assets\Scripts\MasterMemory\Validation\ValidateResult.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\ImmutableBuilderBase.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\_InternalVisibleTo.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\Annotations\Attributes.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\DatabaseBuilderBaseExtensions.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\TableBase.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\Internal\ExpandableArray.cs" />
     <Compile Include="Assets\Scripts\MasterMemory\Internal\ByteBufferWriter.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\Meta\Meta.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\Internal\InternStringResolver.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\Validation\Validator.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\DatabaseBuilderBase.cs" />
     <Compile Include="Assets\Scripts\MasterMemory\Internal\BinarySearch.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\Validation\ValidationDatabase.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\RangeView.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\Validation\ValidatableSet.Sequential.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\Validation\ReferenceSet.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\IValidatable.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\DatabaseBuilderBaseExtensions.cs" />
     <Compile Include="Assets\Scripts\MasterMemory\Internal\HeaderFormatterResolver.cs" />
-    <Compile Include="Assets\Scripts\MasterMemory\Validation\ExpressionDumper.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\Validation\ITableUniqueValidate.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\ImmutableBuilderBase.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\TableBase.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\Meta\Meta.cs" />
     <Compile Include="Assets\Scripts\MasterMemory\Validation\ExpressionParameterNameModifier.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\Validation\ValidatableSet.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\_InternalVisibleTo.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\Internal\ExpandableArray.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\Internal\InternStringResolver.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\Validation\ValidationDatabase.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\Annotations\Attributes.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\Validation\Validator.cs" />
+    <Compile Include="Assets\Scripts\MasterMemory\Validation\ExpressionDumper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\MasterMemory\MasterMemory.asmdef" />

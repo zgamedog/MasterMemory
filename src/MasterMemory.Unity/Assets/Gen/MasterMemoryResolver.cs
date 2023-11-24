@@ -48,7 +48,7 @@ namespace TestTable
 
         static MasterMemoryResolverGetFormatterHelper()
         {
-            lookup = new global::System.Collections.Generic.Dictionary<Type, int>(13)
+            lookup = new global::System.Collections.Generic.Dictionary<Type, int>(15)
             {
                 {typeof(Fail[]), 0 },
                 {typeof(ItemMaster[]), 1 },
@@ -60,9 +60,11 @@ namespace TestTable
                 {typeof(SequentialCheckMaster[]), 7 },
                 {typeof(SingleMaster[]), 8 },
                 {typeof(SkillMaster[]), 9 },
-                {typeof(TestMaster[]), 10 },
-                {typeof(UnityModel[]), 11 },
-                {typeof(UserLevel[]), 12 },
+                {typeof(StaticLanguage_zh_cn[]), 10 },
+                {typeof(TestMaster[]), 11 },
+                {typeof(UnityModel[]), 12 },
+                {typeof(UserLevel[]), 13 },
+                {typeof(World_map_spawn[]), 14 },
             };
         }
 
@@ -83,9 +85,11 @@ namespace TestTable
                 case 7: return new MessagePack.Formatters.ArrayFormatter<SequentialCheckMaster>();
                 case 8: return new MessagePack.Formatters.ArrayFormatter<SingleMaster>();
                 case 9: return new MessagePack.Formatters.ArrayFormatter<SkillMaster>();
-                case 10: return new MessagePack.Formatters.ArrayFormatter<TestMaster>();
-                case 11: return new MessagePack.Formatters.ArrayFormatter<UnityModel>();
-                case 12: return new MessagePack.Formatters.ArrayFormatter<UserLevel>();
+                case 10: return new MessagePack.Formatters.ArrayFormatter<StaticLanguage_zh_cn>();
+                case 11: return new MessagePack.Formatters.ArrayFormatter<TestMaster>();
+                case 12: return new MessagePack.Formatters.ArrayFormatter<UnityModel>();
+                case 13: return new MessagePack.Formatters.ArrayFormatter<UserLevel>();
+                case 14: return new MessagePack.Formatters.ArrayFormatter<World_map_spawn>();
                 default: return null;
             }
         }

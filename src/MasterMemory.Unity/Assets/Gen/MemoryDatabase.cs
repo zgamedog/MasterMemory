@@ -25,9 +25,11 @@ namespace TestTable
         public SequentialCheckMasterTable SequentialCheckMasterTable { get; private set; }
         public SingleMasterTable SingleMasterTable { get; private set; }
         public SkillMasterTable SkillMasterTable { get; private set; }
+        public StaticLanguage_zh_cnTable StaticLanguage_zh_cnTable { get; private set; }
         public TestMasterTable TestMasterTable { get; private set; }
         public UnityModelTable UnityModelTable { get; private set; }
         public UserLevelTable UserLevelTable { get; private set; }
+        public World_map_spawnTable World_map_spawnTable { get; private set; }
 
         public MemoryDatabase(
             FailTable FailTable,
@@ -40,9 +42,11 @@ namespace TestTable
             SequentialCheckMasterTable SequentialCheckMasterTable,
             SingleMasterTable SingleMasterTable,
             SkillMasterTable SkillMasterTable,
+            StaticLanguage_zh_cnTable StaticLanguage_zh_cnTable,
             TestMasterTable TestMasterTable,
             UnityModelTable UnityModelTable,
-            UserLevelTable UserLevelTable
+            UserLevelTable UserLevelTable,
+            World_map_spawnTable World_map_spawnTable
         )
         {
             this.FailTable = FailTable;
@@ -55,9 +59,11 @@ namespace TestTable
             this.SequentialCheckMasterTable = SequentialCheckMasterTable;
             this.SingleMasterTable = SingleMasterTable;
             this.SkillMasterTable = SkillMasterTable;
+            this.StaticLanguage_zh_cnTable = StaticLanguage_zh_cnTable;
             this.TestMasterTable = TestMasterTable;
             this.UnityModelTable = UnityModelTable;
             this.UserLevelTable = UserLevelTable;
+            this.World_map_spawnTable = World_map_spawnTable;
         }
 
         public MemoryDatabase(byte[] databaseBinary, bool internString = true, MessagePack.IFormatterResolver formatterResolver = null, int maxDegreeOfParallelism = 1)
@@ -89,9 +95,11 @@ namespace TestTable
             this.SequentialCheckMasterTable = ExtractTableData<SequentialCheckMaster, SequentialCheckMasterTable>(header, databaseBinary, options, xs => new SequentialCheckMasterTable(xs));
             this.SingleMasterTable = ExtractTableData<SingleMaster, SingleMasterTable>(header, databaseBinary, options, xs => new SingleMasterTable(xs));
             this.SkillMasterTable = ExtractTableData<SkillMaster, SkillMasterTable>(header, databaseBinary, options, xs => new SkillMasterTable(xs));
+            this.StaticLanguage_zh_cnTable = ExtractTableData<StaticLanguage_zh_cn, StaticLanguage_zh_cnTable>(header, databaseBinary, options, xs => new StaticLanguage_zh_cnTable(xs));
             this.TestMasterTable = ExtractTableData<TestMaster, TestMasterTable>(header, databaseBinary, options, xs => new TestMasterTable(xs));
             this.UnityModelTable = ExtractTableData<UnityModel, UnityModelTable>(header, databaseBinary, options, xs => new UnityModelTable(xs));
             this.UserLevelTable = ExtractTableData<UserLevel, UserLevelTable>(header, databaseBinary, options, xs => new UserLevelTable(xs));
+            this.World_map_spawnTable = ExtractTableData<World_map_spawn, World_map_spawnTable>(header, databaseBinary, options, xs => new World_map_spawnTable(xs));
         }
 
         void InitParallel(Dictionary<string, (int offset, int count)> header, System.ReadOnlyMemory<byte> databaseBinary, MessagePack.MessagePackSerializerOptions options, int maxDegreeOfParallelism)
@@ -108,9 +116,11 @@ namespace TestTable
                 () => this.SequentialCheckMasterTable = ExtractTableData<SequentialCheckMaster, SequentialCheckMasterTable>(header, databaseBinary, options, xs => new SequentialCheckMasterTable(xs)),
                 () => this.SingleMasterTable = ExtractTableData<SingleMaster, SingleMasterTable>(header, databaseBinary, options, xs => new SingleMasterTable(xs)),
                 () => this.SkillMasterTable = ExtractTableData<SkillMaster, SkillMasterTable>(header, databaseBinary, options, xs => new SkillMasterTable(xs)),
+                () => this.StaticLanguage_zh_cnTable = ExtractTableData<StaticLanguage_zh_cn, StaticLanguage_zh_cnTable>(header, databaseBinary, options, xs => new StaticLanguage_zh_cnTable(xs)),
                 () => this.TestMasterTable = ExtractTableData<TestMaster, TestMasterTable>(header, databaseBinary, options, xs => new TestMasterTable(xs)),
                 () => this.UnityModelTable = ExtractTableData<UnityModel, UnityModelTable>(header, databaseBinary, options, xs => new UnityModelTable(xs)),
                 () => this.UserLevelTable = ExtractTableData<UserLevel, UserLevelTable>(header, databaseBinary, options, xs => new UserLevelTable(xs)),
+                () => this.World_map_spawnTable = ExtractTableData<World_map_spawn, World_map_spawnTable>(header, databaseBinary, options, xs => new World_map_spawnTable(xs)),
             };
             
             System.Threading.Tasks.Parallel.Invoke(new System.Threading.Tasks.ParallelOptions
@@ -137,9 +147,11 @@ namespace TestTable
             builder.Append(this.SequentialCheckMasterTable.GetRawDataUnsafe());
             builder.Append(this.SingleMasterTable.GetRawDataUnsafe());
             builder.Append(this.SkillMasterTable.GetRawDataUnsafe());
+            builder.Append(this.StaticLanguage_zh_cnTable.GetRawDataUnsafe());
             builder.Append(this.TestMasterTable.GetRawDataUnsafe());
             builder.Append(this.UnityModelTable.GetRawDataUnsafe());
             builder.Append(this.UserLevelTable.GetRawDataUnsafe());
+            builder.Append(this.World_map_spawnTable.GetRawDataUnsafe());
             return builder;
         }
 
@@ -156,9 +168,11 @@ namespace TestTable
             builder.Append(this.SequentialCheckMasterTable.GetRawDataUnsafe());
             builder.Append(this.SingleMasterTable.GetRawDataUnsafe());
             builder.Append(this.SkillMasterTable.GetRawDataUnsafe());
+            builder.Append(this.StaticLanguage_zh_cnTable.GetRawDataUnsafe());
             builder.Append(this.TestMasterTable.GetRawDataUnsafe());
             builder.Append(this.UnityModelTable.GetRawDataUnsafe());
             builder.Append(this.UserLevelTable.GetRawDataUnsafe());
+            builder.Append(this.World_map_spawnTable.GetRawDataUnsafe());
             return builder;
         }
 
@@ -179,9 +193,11 @@ namespace TestTable
                 SequentialCheckMasterTable,
                 SingleMasterTable,
                 SkillMasterTable,
+                StaticLanguage_zh_cnTable,
                 TestMasterTable,
                 UnityModelTable,
                 UserLevelTable,
+                World_map_spawnTable,
             });
 
             ((ITableUniqueValidate)FailTable).ValidateUnique(result);
@@ -204,12 +220,16 @@ namespace TestTable
             ValidateTable(SingleMasterTable.All, database, "Id", SingleMasterTable.PrimaryKeySelector, result);
             ((ITableUniqueValidate)SkillMasterTable).ValidateUnique(result);
             ValidateTable(SkillMasterTable.All, database, "(SkillId, SkillLevel)", SkillMasterTable.PrimaryKeySelector, result);
+            ((ITableUniqueValidate)StaticLanguage_zh_cnTable).ValidateUnique(result);
+            ValidateTable(StaticLanguage_zh_cnTable.All, database, "Id", StaticLanguage_zh_cnTable.PrimaryKeySelector, result);
             ((ITableUniqueValidate)TestMasterTable).ValidateUnique(result);
             ValidateTable(TestMasterTable.All, database, "TestID", TestMasterTable.PrimaryKeySelector, result);
             ((ITableUniqueValidate)UnityModelTable).ValidateUnique(result);
             ValidateTable(UnityModelTable.All, database, "Id", UnityModelTable.PrimaryKeySelector, result);
             ((ITableUniqueValidate)UserLevelTable).ValidateUnique(result);
             ValidateTable(UserLevelTable.All, database, "Level", UserLevelTable.PrimaryKeySelector, result);
+            ((ITableUniqueValidate)World_map_spawnTable).ValidateUnique(result);
+            ValidateTable(World_map_spawnTable.All, database, "Id", World_map_spawnTable.PrimaryKeySelector, result);
 
             return result;
         }
@@ -242,12 +262,16 @@ namespace TestTable
                     return db.SingleMasterTable;
                 case "skillmaster":
                     return db.SkillMasterTable;
+                case "staticLanguage_zh_cn":
+                    return db.StaticLanguage_zh_cnTable;
                 case "TestMaster":
                     return db.TestMasterTable;
                 case "unity":
                     return db.UnityModelTable;
                 case "UserLevel":
                     return db.UserLevelTable;
+                case "world_map_spawn":
+                    return db.World_map_spawnTable;
                 
                 default:
                     return null;
@@ -271,9 +295,11 @@ namespace TestTable
             dict.Add("sequantial_master", TestTable.Tables.SequentialCheckMasterTable.CreateMetaTable());
             dict.Add("single_master", TestTable.Tables.SingleMasterTable.CreateMetaTable());
             dict.Add("skillmaster", TestTable.Tables.SkillMasterTable.CreateMetaTable());
+            dict.Add("staticLanguage_zh_cn", TestTable.Tables.StaticLanguage_zh_cnTable.CreateMetaTable());
             dict.Add("TestMaster", TestTable.Tables.TestMasterTable.CreateMetaTable());
             dict.Add("unity", TestTable.Tables.UnityModelTable.CreateMetaTable());
             dict.Add("UserLevel", TestTable.Tables.UserLevelTable.CreateMetaTable());
+            dict.Add("world_map_spawn", TestTable.Tables.World_map_spawnTable.CreateMetaTable());
 
             metaTable = new MasterMemory.Meta.MetaDatabase(dict);
             return metaTable;

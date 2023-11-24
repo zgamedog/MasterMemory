@@ -108,8 +108,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\ILayerable.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\TimelineClip.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\Animation\AnimationOutputWeightProcessor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\Events\Marker.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\Audio\AudioMixerProperties.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\Events\Marker.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\AssetUpgrade\AnimationTrackUpgrade.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\DiscreteTime.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.4.8\Runtime\Playables\TimeNotificationBehaviour.cs" />
