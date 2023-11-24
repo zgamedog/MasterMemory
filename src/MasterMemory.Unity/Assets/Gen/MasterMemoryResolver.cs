@@ -8,6 +8,7 @@ using MessagePack;
 using System.Collections.Generic;
 using System.Text;
 using System;
+using UnityEngine;
 using TestTable.Tables;
 
 namespace TestTable
@@ -47,7 +48,7 @@ namespace TestTable
 
         static MasterMemoryResolverGetFormatterHelper()
         {
-            lookup = new global::System.Collections.Generic.Dictionary<Type, int>(12)
+            lookup = new global::System.Collections.Generic.Dictionary<Type, int>(13)
             {
                 {typeof(Fail[]), 0 },
                 {typeof(ItemMaster[]), 1 },
@@ -60,7 +61,8 @@ namespace TestTable
                 {typeof(SingleMaster[]), 8 },
                 {typeof(SkillMaster[]), 9 },
                 {typeof(TestMaster[]), 10 },
-                {typeof(UserLevel[]), 11 },
+                {typeof(UnityModel[]), 11 },
+                {typeof(UserLevel[]), 12 },
             };
         }
 
@@ -82,7 +84,8 @@ namespace TestTable
                 case 8: return new MessagePack.Formatters.ArrayFormatter<SingleMaster>();
                 case 9: return new MessagePack.Formatters.ArrayFormatter<SkillMaster>();
                 case 10: return new MessagePack.Formatters.ArrayFormatter<TestMaster>();
-                case 11: return new MessagePack.Formatters.ArrayFormatter<UserLevel>();
+                case 11: return new MessagePack.Formatters.ArrayFormatter<UnityModel>();
+                case 12: return new MessagePack.Formatters.ArrayFormatter<UserLevel>();
                 default: return null;
             }
         }

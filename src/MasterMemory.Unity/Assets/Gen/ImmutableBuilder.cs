@@ -8,6 +8,7 @@ using MessagePack;
 using System.Collections.Generic;
 using System.Text;
 using System;
+using UnityEngine;
 using TestTable.Tables;
 
 namespace TestTable
@@ -42,6 +43,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -64,6 +66,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -86,6 +89,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -107,6 +111,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -129,6 +134,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -151,6 +157,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -172,6 +179,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -194,6 +202,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -216,6 +225,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -237,6 +247,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -259,6 +270,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -281,6 +293,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -302,6 +315,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -324,6 +338,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -346,6 +361,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -367,6 +383,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -389,6 +406,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -411,6 +429,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -432,6 +451,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -454,6 +474,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -476,6 +497,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -497,6 +519,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -519,6 +542,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -541,6 +565,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -562,6 +587,7 @@ namespace TestTable
                 table,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -584,6 +610,7 @@ namespace TestTable
                 table,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -606,6 +633,7 @@ namespace TestTable
                 table,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -627,6 +655,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 table,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -649,6 +678,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 table,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -671,6 +701,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 table,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
@@ -692,11 +723,80 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 table,
+                memory.UnityModelTable,
                 memory.UserLevelTable
             
             );
         }
 
+
+        public void ReplaceAll(System.Collections.Generic.IList<UnityModel> data)
+        {
+            var newData = CloneAndSortBy(data, x => x.Id, System.Collections.Generic.Comparer<int>.Default);
+            var table = new UnityModelTable(newData);
+            memory = new MemoryDatabase(
+                memory.FailTable,
+                memory.ItemMasterTable,
+                memory.ItemMasterEmptyValidateTable,
+                memory.PersonModelTable,
+                memory.QuestMasterTable,
+                memory.QuestMasterEmptyValidateTable,
+                memory.SampleTable,
+                memory.SequentialCheckMasterTable,
+                memory.SingleMasterTable,
+                memory.SkillMasterTable,
+                memory.TestMasterTable,
+                table,
+                memory.UserLevelTable
+            
+            );
+        }
+
+        public void RemoveUnityModel(int[] keys)
+        {
+            var data = RemoveCore(memory.UnityModelTable.GetRawDataUnsafe(), keys, x => x.Id, System.Collections.Generic.Comparer<int>.Default);
+            var newData = CloneAndSortBy(data, x => x.Id, System.Collections.Generic.Comparer<int>.Default);
+            var table = new UnityModelTable(newData);
+            memory = new MemoryDatabase(
+                memory.FailTable,
+                memory.ItemMasterTable,
+                memory.ItemMasterEmptyValidateTable,
+                memory.PersonModelTable,
+                memory.QuestMasterTable,
+                memory.QuestMasterEmptyValidateTable,
+                memory.SampleTable,
+                memory.SequentialCheckMasterTable,
+                memory.SingleMasterTable,
+                memory.SkillMasterTable,
+                memory.TestMasterTable,
+                table,
+                memory.UserLevelTable
+            
+            );
+        }
+
+        public void Diff(UnityModel[] addOrReplaceData)
+        {
+            var data = DiffCore(memory.UnityModelTable.GetRawDataUnsafe(), addOrReplaceData, x => x.Id, System.Collections.Generic.Comparer<int>.Default);
+            var newData = CloneAndSortBy(data, x => x.Id, System.Collections.Generic.Comparer<int>.Default);
+            var table = new UnityModelTable(newData);
+            memory = new MemoryDatabase(
+                memory.FailTable,
+                memory.ItemMasterTable,
+                memory.ItemMasterEmptyValidateTable,
+                memory.PersonModelTable,
+                memory.QuestMasterTable,
+                memory.QuestMasterEmptyValidateTable,
+                memory.SampleTable,
+                memory.SequentialCheckMasterTable,
+                memory.SingleMasterTable,
+                memory.SkillMasterTable,
+                memory.TestMasterTable,
+                table,
+                memory.UserLevelTable
+            
+            );
+        }
 
         public void ReplaceAll(System.Collections.Generic.IList<UserLevel> data)
         {
@@ -714,6 +814,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 table
             
             );
@@ -736,6 +837,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 table
             
             );
@@ -758,6 +860,7 @@ namespace TestTable
                 memory.SingleMasterTable,
                 memory.SkillMasterTable,
                 memory.TestMasterTable,
+                memory.UnityModelTable,
                 table
             
             );

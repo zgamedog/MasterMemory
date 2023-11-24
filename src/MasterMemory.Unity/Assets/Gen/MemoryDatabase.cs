@@ -8,6 +8,7 @@ using MessagePack;
 using System.Collections.Generic;
 using System.Text;
 using System;
+using UnityEngine;
 using TestTable.Tables;
 
 namespace TestTable
@@ -25,6 +26,7 @@ namespace TestTable
         public SingleMasterTable SingleMasterTable { get; private set; }
         public SkillMasterTable SkillMasterTable { get; private set; }
         public TestMasterTable TestMasterTable { get; private set; }
+        public UnityModelTable UnityModelTable { get; private set; }
         public UserLevelTable UserLevelTable { get; private set; }
 
         public MemoryDatabase(
@@ -39,6 +41,7 @@ namespace TestTable
             SingleMasterTable SingleMasterTable,
             SkillMasterTable SkillMasterTable,
             TestMasterTable TestMasterTable,
+            UnityModelTable UnityModelTable,
             UserLevelTable UserLevelTable
         )
         {
@@ -53,6 +56,7 @@ namespace TestTable
             this.SingleMasterTable = SingleMasterTable;
             this.SkillMasterTable = SkillMasterTable;
             this.TestMasterTable = TestMasterTable;
+            this.UnityModelTable = UnityModelTable;
             this.UserLevelTable = UserLevelTable;
         }
 
@@ -86,6 +90,7 @@ namespace TestTable
             this.SingleMasterTable = ExtractTableData<SingleMaster, SingleMasterTable>(header, databaseBinary, options, xs => new SingleMasterTable(xs));
             this.SkillMasterTable = ExtractTableData<SkillMaster, SkillMasterTable>(header, databaseBinary, options, xs => new SkillMasterTable(xs));
             this.TestMasterTable = ExtractTableData<TestMaster, TestMasterTable>(header, databaseBinary, options, xs => new TestMasterTable(xs));
+            this.UnityModelTable = ExtractTableData<UnityModel, UnityModelTable>(header, databaseBinary, options, xs => new UnityModelTable(xs));
             this.UserLevelTable = ExtractTableData<UserLevel, UserLevelTable>(header, databaseBinary, options, xs => new UserLevelTable(xs));
         }
 
@@ -104,6 +109,7 @@ namespace TestTable
                 () => this.SingleMasterTable = ExtractTableData<SingleMaster, SingleMasterTable>(header, databaseBinary, options, xs => new SingleMasterTable(xs)),
                 () => this.SkillMasterTable = ExtractTableData<SkillMaster, SkillMasterTable>(header, databaseBinary, options, xs => new SkillMasterTable(xs)),
                 () => this.TestMasterTable = ExtractTableData<TestMaster, TestMasterTable>(header, databaseBinary, options, xs => new TestMasterTable(xs)),
+                () => this.UnityModelTable = ExtractTableData<UnityModel, UnityModelTable>(header, databaseBinary, options, xs => new UnityModelTable(xs)),
                 () => this.UserLevelTable = ExtractTableData<UserLevel, UserLevelTable>(header, databaseBinary, options, xs => new UserLevelTable(xs)),
             };
             
@@ -132,6 +138,7 @@ namespace TestTable
             builder.Append(this.SingleMasterTable.GetRawDataUnsafe());
             builder.Append(this.SkillMasterTable.GetRawDataUnsafe());
             builder.Append(this.TestMasterTable.GetRawDataUnsafe());
+            builder.Append(this.UnityModelTable.GetRawDataUnsafe());
             builder.Append(this.UserLevelTable.GetRawDataUnsafe());
             return builder;
         }
@@ -150,6 +157,7 @@ namespace TestTable
             builder.Append(this.SingleMasterTable.GetRawDataUnsafe());
             builder.Append(this.SkillMasterTable.GetRawDataUnsafe());
             builder.Append(this.TestMasterTable.GetRawDataUnsafe());
+            builder.Append(this.UnityModelTable.GetRawDataUnsafe());
             builder.Append(this.UserLevelTable.GetRawDataUnsafe());
             return builder;
         }
@@ -172,6 +180,7 @@ namespace TestTable
                 SingleMasterTable,
                 SkillMasterTable,
                 TestMasterTable,
+                UnityModelTable,
                 UserLevelTable,
             });
 
@@ -197,6 +206,8 @@ namespace TestTable
             ValidateTable(SkillMasterTable.All, database, "(SkillId, SkillLevel)", SkillMasterTable.PrimaryKeySelector, result);
             ((ITableUniqueValidate)TestMasterTable).ValidateUnique(result);
             ValidateTable(TestMasterTable.All, database, "TestID", TestMasterTable.PrimaryKeySelector, result);
+            ((ITableUniqueValidate)UnityModelTable).ValidateUnique(result);
+            ValidateTable(UnityModelTable.All, database, "Id", UnityModelTable.PrimaryKeySelector, result);
             ((ITableUniqueValidate)UserLevelTable).ValidateUnique(result);
             ValidateTable(UserLevelTable.All, database, "Level", UserLevelTable.PrimaryKeySelector, result);
 
@@ -233,6 +244,8 @@ namespace TestTable
                     return db.SkillMasterTable;
                 case "TestMaster":
                     return db.TestMasterTable;
+                case "unity":
+                    return db.UnityModelTable;
                 case "UserLevel":
                     return db.UserLevelTable;
                 
@@ -259,6 +272,7 @@ namespace TestTable
             dict.Add("single_master", TestTable.Tables.SingleMasterTable.CreateMetaTable());
             dict.Add("skillmaster", TestTable.Tables.SkillMasterTable.CreateMetaTable());
             dict.Add("TestMaster", TestTable.Tables.TestMasterTable.CreateMetaTable());
+            dict.Add("unity", TestTable.Tables.UnityModelTable.CreateMetaTable());
             dict.Add("UserLevel", TestTable.Tables.UserLevelTable.CreateMetaTable());
 
             metaTable = new MasterMemory.Meta.MetaDatabase(dict);

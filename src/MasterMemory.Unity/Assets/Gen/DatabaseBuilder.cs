@@ -8,6 +8,7 @@ using MessagePack;
 using System.Collections.Generic;
 using System.Text;
 using System;
+using UnityEngine;
 using TestTable.Tables;
 
 namespace TestTable
@@ -80,6 +81,12 @@ namespace TestTable
         public DatabaseBuilder Append(System.Collections.Generic.IEnumerable<TestMaster> dataSource)
         {
             AppendCore(dataSource, x => x.TestID, System.Collections.Generic.Comparer<int>.Default);
+            return this;
+        }
+
+        public DatabaseBuilder Append(System.Collections.Generic.IEnumerable<UnityModel> dataSource)
+        {
+            AppendCore(dataSource, x => x.Id, System.Collections.Generic.Comparer<int>.Default);
             return this;
         }
 

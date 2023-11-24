@@ -1,0 +1,20 @@
+{
+    "name": "MasterMemoryHelper",
+    "rootNamespace": "",
+    "references": [
+        "ClassTypeReference",
+        "MessagePack",
+        "MasterMemory"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
