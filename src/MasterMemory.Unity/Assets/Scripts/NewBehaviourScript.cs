@@ -118,10 +118,9 @@ public class NewBehaviourScript : MonoBehaviour
 
         // .PersonTable.FindByPersonId is fully typed by code-generation.
         var person = db.World_map_spawnTable.FindClosestById(10000);
-        var length = 55;
 
         if(person != null)
-            Debug.Log(person);
+            Debug.Log(person.Pos);
 
 
     }
@@ -134,7 +133,6 @@ public class NewBehaviourScript : MonoBehaviour
 
         // .PersonTable.FindByPersonId is fully typed by code-generation.
         var person = db.StaticLanguage_zh_cnTable.FindClosestById(1000000067);
-        var length = 55;
 
         if (person != null)
             Debug.Log(person.Text);

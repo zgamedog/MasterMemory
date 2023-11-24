@@ -56,35 +56,19 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\TestStructures\TestMaster.cs" />
     <Compile Include="Assets\Gen\Tables\StaticLanguage_zh_cnTable.cs" />
-    <Compile Include="Assets\TestStructures\UserLevel.cs" />
     <Compile Include="Assets\Gen\DatabaseBuilder.cs" />
     <Compile Include="Assets\TestStructures\World_map_spawn.cs" />
-    <Compile Include="Assets\Gen\Tables\ItemMasterEmptyValidateTable.cs" />
     <Compile Include="Assets\Gen\Tables\PersonModelTable.cs" />
-    <Compile Include="Assets\Gen\Tables\QuestMasterEmptyValidateTable.cs" />
-    <Compile Include="Assets\Gen\Tables\UserLevelTable.cs" />
-    <Compile Include="Assets\Gen\Tables\SequentialCheckMasterTable.cs" />
     <Compile Include="Assets\Gen\Tables\World_map_spawnTable.cs" />
-    <Compile Include="Assets\Gen\Tables\TestMasterTable.cs" />
     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Gen\MemoryDatabase.cs" />
-    <Compile Include="Assets\Gen\Tables\FailTable.cs" />
     <Compile Include="Assets\TestStructures\StaticLanguage_zh_cn.cs" />
     <Compile Include="Assets\Gen\Tables\UnityModelTable.cs" />
-    <Compile Include="Assets\TestStructures\Sample.cs" />
     <Compile Include="Assets\Gen\ImmutableBuilder.cs" />
     <Compile Include="Assets\TestStructures\UnityModel.cs" />
-    <Compile Include="Assets\Gen\Tables\SkillMasterTable.cs" />
-    <Compile Include="Assets\Gen\Tables\ItemMasterTable.cs" />
-    <Compile Include="Assets\Gen\Tables\QuestMasterTable.cs" />
-    <Compile Include="Assets\Gen\Tables\SingleMasterTable.cs" />
     <Compile Include="Assets\Gen\MasterMemoryResolver.cs" />
-    <Compile Include="Assets\TestStructures\QuestMaster.cs" />
     <Compile Include="Assets\TestStructures\PersonModel.cs" />
-    <Compile Include="Assets\Gen\Tables\SampleTable.cs" />
-    <Compile Include="Assets\TestStructures\SkillMaster.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
